@@ -1,0 +1,44 @@
+
+.clickable-dots{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 60vw;
+    padding: 2%;
+    
+}
+
+
+.desc-wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.img-desc-ctr{
+    width: 60vw;
+}
+
+.description-pic{ 
+    max-width: 100%;
+}
+
+
+.portfolioObj-main{
+    display: flex;
+    align-items: center;
+    margin: 2vh 0;
+}
+
+.tech-used-ctr{
+    margin-top: 4vh;
+    text-align: center;
+}
+.tech-used{ 
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 4vh;
+}

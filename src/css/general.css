@@ -1,0 +1,22 @@
+.my-body{
+    background-color: white;
+    min-height: 100%;
+    height: 100vh;
+    position: relative;
+
+    /*this allows me to keep my modals on the side withiout the window adjusting */
+    overflow: hidden;
+    color: black;
+
+    font-family: 'Kanit', sans-serif;
+}
+
+.main-sec{
+    width: 90vw;
+    display: flex;
+    padding: 10%;
+    margin: 0 auto;
+
+    position: relative;
+    z-index: 2;
+}

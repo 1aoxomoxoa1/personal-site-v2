@@ -1,0 +1,31 @@
+.contact-wrapper{ 
+    text-align: center;
+    width: 100%;
+}
+
+
+.contact h1{
+    font-size: 300%;
+}
+
+.name-flair{
+    color: #43A579;
+}
+
+.contact-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-info .row{
+    flex-basis: 100%;
+}
+
+.row{
+    display: flex;
+}
+
+.row img{ 
+    width: 8vw;
+}
+

@@ -1,0 +1,226 @@
+.my-navbar{
+    display: flex;
+    justify-content: right;
+    height: 15vh;
+    padding: 2%;
+}
+
+header{ 
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+}
+
+
+.menu-icon{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    z-index: 4;
+}
+
+.spinning{
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.shake{
+    animation-name: shake;  
+    animation-duration: .5s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;  
+}
+
+@keyframes shake {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(1.5em);
+    }
+    40% {
+      transform: translate(-1.5em);
+    }
+    60% {
+      transform: translate(1.5em);
+    }
+    80% {
+      transform: translate(-1.5em);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+.left-modal{
+    height: 100vh;
+    width: 50%;
+    background-color: #4f4f4f;
+    opacity: .8;
+    position: absolute;
+    left: -50%;
+
+    padding: 40px;
+
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 3;
+}
+
+/* THIS IS STYLING FOR THE NAME LOGO INSIDE THE LEFT MODAL */
+.left-modal .name-logo{ 
+    width: 30vw;
+    opacity: 1;
+
+  
+}
+
+
+.right-modal{ 
+    height: 100vh;
+    width: 50%;
+    background-color: #3b3b3b;
+    opacity: .8;
+
+    /*positioning */ 
+    position: absolute;
+    left: 100%;
+
+    /*flex for the nav link list */
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    
+    z-index: 3;
+}
+
+
+.right-modal .nav-links{
+    color: white;
+    font-weight: 900;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-links h2{ 
+    margin: 4.5vh 0px;
+    font-size: 7vh;
+}
+
+.nav-links h2:hover{ 
+    color: #43A579;
+}
+
+@keyframes slideFromLeft {
+    from{
+        left: -50%
+    }
+    to{
+        left: 0;
+    }
+}
+
+@keyframes slideBackLeft {
+    from{
+        left: 0%
+    }
+    to{
+        left: -50;
+    }
+}
+
+@keyframes slideFromRight {
+    from{
+        left: 100%
+    }
+    to{
+        left: 50;
+    }
+}
+
+@keyframes slideBackRight {
+    from{
+        left: 50%
+    }
+    to{
+        left: 100%;
+    }
+}
+
+.hiding-left{
+    /* left: -50% is the value the animation ends at to be hidden, and it is not visible */
+    left: -50%;
+    visibility: visible;
+
+    /* animation properties */
+    animation-name: slideBackLeft;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.showing-left{
+    /* left: 0% is the value the animation ends at to be showing, and it is visible */
+    left: 0%;
+    visibility: visible;
+
+    /* animation properties */
+    animation-name: slideFromLeft;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+
+.hiding-right{
+    /* left: 100% is the value the animation ends at to be hidden, and it is not visible */
+    left: 100%;
+    visibility: visible;
+
+    /* animation properties */
+    animation-name: slideBackRight;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.showing-right{
+    /* left: 50% is the value the animation ends at to be showing, and it is visible */
+    left: 50%;
+    visibility: visible;
+
+    /* animation properties */
+    animation-name: slideFromRight;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+
