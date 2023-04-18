@@ -7,6 +7,9 @@ function useWithinPhoneMenuStatus() {
     useEffect(() => {
       const menuButton = smallMenuButtonRef.current; 
 
+      console.log('checking if the useEffect works');
+      console.log(menuButton);
+      
       //this function is called when the menu button is pressed
       function handleMenuButtonClick(){
         console.log('calling handleMenuButtonClick within custom hook')

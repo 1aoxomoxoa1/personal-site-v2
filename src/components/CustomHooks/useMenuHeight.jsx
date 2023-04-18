@@ -8,6 +8,7 @@ function useMenuHeight() {
     if (menuRef.current) {
       const height = menuRef.current.offsetHeight;
       setHeight(height);
+      console.log(`height: ${height}`)
     }
   }, []);
 
