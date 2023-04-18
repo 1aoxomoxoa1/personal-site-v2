@@ -9,7 +9,6 @@ export async function loadImagesHome(setImages) {
             src: imageModule.default
         };
     }));
-    console.log(loadedImages);
 
     setImages(loadedImages);
 }

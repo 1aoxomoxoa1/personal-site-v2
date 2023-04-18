@@ -21,8 +21,6 @@ function Contact({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){
     }, [])
 
 
-    console.log(contactImages);
-
     return( 
        <div className='my-body'> 
             <Navbar index={isIndex} smallMenuButtonRef={smallMenuButtonRef} menuRef={menuRef} isWithinPhoneMenu={isWithinPhoneMenu}> </Navbar>

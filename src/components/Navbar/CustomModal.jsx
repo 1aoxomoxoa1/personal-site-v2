@@ -14,14 +14,6 @@ function CustomModal({show, setShow, modalClasses, setModalClasses, onAnimationE
   const indexToUrlMap = new Map([[0, '/'], [1, '/experience'], [2, '/portfolio'], [3, '/contact']]);
   const [currentPageIdx, setCurrentPageIdx] = useState(getCurrentPageIdx())
   
-  
-  
-  useEffect(() => {
-    console.log(`showing: ${show}`)
-  }, [show])
-
-
-
   function getCurrentPageIdx(){
     let currentPath = window.location.href;
     let baseUrl = process.env.REACT_APP_SERVER;
@@ -29,7 +21,6 @@ function CustomModal({show, setShow, modalClasses, setModalClasses, onAnimationE
     const regex = new RegExp(baseUrl, 'g');
     let currentPage = currentPath.replace(regex, ""); 
 
-    console.log(urlToIndexMap.get(currentPage));
     return urlToIndexMap.get(currentPage);
   }
 

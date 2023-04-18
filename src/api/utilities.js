@@ -36,7 +36,6 @@ const portfolioData = [
 ];
 
 function checkNavigationHistory(location){
-    console.log(location.state);
     window.history.replaceState(null, '')
 
     if(!location.state){

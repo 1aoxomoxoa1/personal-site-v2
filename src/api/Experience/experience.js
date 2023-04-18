@@ -35,7 +35,6 @@ export async function loadImagesExperience(setExperiences) {
         };
     }));
 
-    console.log(loadedImages);
 
     //EXPERIENCES WILL BE AN OBJECT THAT COMBINES THE INFO OF EXPERIENCE WITH THE IMAGES
     let experiences = timelineInfo.map((object, idx) => {
@@ -45,7 +44,6 @@ export async function loadImagesExperience(setExperiences) {
         }
     })
 
-    console.log(experiences);
 
     setExperiences(experiences);
 }

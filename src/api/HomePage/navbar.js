@@ -16,7 +16,6 @@ export function handleHide(setShow, setClickable, setModalClasses, setMenuIconCl
 
 
 export function menuDoubleClicked(setMenuIconClass){
-    console.log('wait');
     setMenuIconClass('menu-icon-normal spinning shake')
 }
 

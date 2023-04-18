@@ -42,7 +42,6 @@ export async function loadPortfolio(setPortfolio){
     let techImages = await getTechImages();
  
     //we then want to replace the names of tech used in the portfolio data with the relevant techImages
-    console.log(portfolioData);
 
     let descImages = await getDescImages();
 
@@ -63,8 +62,6 @@ export async function loadPortfolio(setPortfolio){
         let techUsedWithImages = techUsed.map((techName) => techImages.find(techImage => techImage.name === techName));
         portfolioObjIncomplete.techUsed = techUsedWithImages;
     }
-
-    console.log(portfolioWithDescriptions);
 
     setPortfolio(portfolioWithDescriptions);
 }

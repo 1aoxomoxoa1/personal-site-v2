@@ -24,8 +24,6 @@ function Portfolio({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){
         loadPortfolio(setPortfolio);
     }, [])
 
-    console.log(portfolio);
-
     return( 
        <div className='my-body'> 
             <Navbar index={isIndex} smallMenuButtonRef={smallMenuButtonRef} menuRef={menuRef} isWithinPhoneMenu={isWithinPhoneMenu}> </Navbar>
