@@ -20,3 +20,11 @@
     position: relative;
     z-index: 2;
 }
+
+
+@media screen and (max-width: 600px) {
+    .my-body{
+        overflow: auto;
+
+    }
+  }

@@ -5,8 +5,10 @@ import BlackX from '../../resources/black-x.png'
 import { useState, useRef, useEffect } from 'react';
 import { handleShow, handleHide, menuDoubleClicked, animateMenuIcon } from '../../api/HomePage/navbar';
 import { onAnimationEnd } from '../../api/HomePage/modal';
+import CustomMenuToggle from './CustomMenuToggle';
+import useWithinPhoneMenuStatus from '../CustomHooks/useWithinPhoneMenuStatus';
 
-function Navbar({index}){
+function Navbar({index, smallMenuButtonRef, menuRef, isWithinPhoneMenu}){
 
    
     //states to keep track of modalClasses
@@ -17,7 +19,6 @@ function Navbar({index}){
     //state for the menuIcon
     const [menuIconClass, setMenuIconClass] = useState(checkIndex('menu'));
 
-    //
 
 
     function checkIndex(item){
@@ -31,9 +32,9 @@ function Navbar({index}){
             }
         }else if(item === 'menu'){
             if(index === true){
-                return 'menu-icon'
+                return 'menu-icon-normal'
             }else{
-                return 'menu-icon spinning'
+                return 'menu-icon-normal spinning'
             }
         }
     }
@@ -46,14 +47,20 @@ function Navbar({index}){
                 alt="menu-icon" 
                 onClick={
                     clickable === false 
-                    ? () => menuDoubleClicked(setMenuIconClass)
-                    :
+                    ? () => menuDoubleClicked(setMenuIconClass) //if you cannot click
+                    : //if you are allowed to click
                         show === false 
-                        ? () => handleShow(setShow, setClickable, setModalClasses, setMenuIconClass)
-                        : () => handleHide(setShow, setClickable, setModalClasses, setMenuIconClass)
+                        ? () => handleShow(setShow, setClickable, setModalClasses, setMenuIconClass) //show nav
+                        : () => handleHide(setShow, setClickable, setModalClasses, setMenuIconClass) // hide nav
                 } 
                 className={menuIconClass}
             />
+
+            {/* We need two menu icons for different functionality on small screens */}
+            
+
+            <CustomMenuToggle smallMenuButtonRef={smallMenuButtonRef} menuRef={menuRef} isWithinPhoneMenu={isWithinPhoneMenu}> </CustomMenuToggle>
+
         </header>
      
         <CustomModal 

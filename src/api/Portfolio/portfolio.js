@@ -23,7 +23,6 @@ async function getTechImages(){
 //  */
 async function getDescImages(){
     let descImageNames = portfolioData.map(element => element.imgDescName);
-    console.log(descImageNames);
 
     const loadedImages = await Promise.all(descImageNames.map(async (descImageName) => {
         const imageModule = await import(`../../resources/${descImageName}`);
@@ -41,8 +40,7 @@ export async function loadPortfolio(setPortfolio){
 
     //first, lets get the images we need for the tech I use
     let techImages = await getTechImages();
-    console.log(techImages);
-
+ 
     //we then want to replace the names of tech used in the portfolio data with the relevant techImages
     console.log(portfolioData);
 

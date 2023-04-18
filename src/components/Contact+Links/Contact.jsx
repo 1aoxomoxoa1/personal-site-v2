@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 import { checkNavigationHistory } from '../../api/utilities';
 import { loadContactImages } from '../../api/Contact+Links/contact';
 
-function Contact(){ 
+function Contact({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){ 
 
     const location = useLocation();
 
@@ -25,17 +25,20 @@ function Contact(){
 
     return( 
        <div className='my-body'> 
-            <Navbar index={isIndex}> </Navbar>
+            <Navbar index={isIndex} smallMenuButtonRef={smallMenuButtonRef} menuRef={menuRef} isWithinPhoneMenu={isWithinPhoneMenu}> </Navbar>
             <main className='contact main-sec'>
                 <div className='contact-wrapper'> 
                     <h1> Let's <span className='name-flair'> Talk </span></h1>
                     <div className='contact-info'>
                         {contactImages.map((contactImage) => 
-                            <div className='row'>
+                            <div className='my-row'>
                                 <div className='img-wrapper'>
                                     <img src={contactImage.src} alt={contactImage.name} /> 
                                 </div>
-                                <h2> {contactImage.info} </h2>
+                                <div className='text-wrapper-info'> 
+                                    <p> {contactImage.info} </p>
+                                </div>
+                                {/* <h2> {contactImage.info} </h2> */}
                             </div>
                         )
                         }

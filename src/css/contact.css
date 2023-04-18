@@ -13,19 +13,24 @@
 }
 
 .contact-info{
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
 }
 
-.contact-info .row{
-    flex-basis: 100%;
+
+.my-row{
+    display: block;
+    word-wrap: break-word;
 }
 
-.row{
-    display: flex;
+.my-row p{
+    font-size: 150%;
 }
 
-.row img{ 
+.my-row img{ 
     width: 8vw;
 }
+
+/* .text-wrapper-info *{
+    box-sizing: content-box;
+} */
 

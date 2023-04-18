@@ -17,10 +17,10 @@ export function handleHide(setShow, setClickable, setModalClasses, setMenuIconCl
 
 export function menuDoubleClicked(setMenuIconClass){
     console.log('wait');
-    setMenuIconClass('menu-icon spinning shake')
+    setMenuIconClass('menu-icon-normal spinning shake')
 }
 
 
 export function animateMenuIcon(setMenuIconClass){ 
-    setMenuIconClass('menu-icon spinning')
+    setMenuIconClass('menu-icon-normal spinning')
 }

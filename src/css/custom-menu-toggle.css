@@ -1,0 +1,46 @@
+custom-drop-menu{
+    position: absolute;
+    right: 25px;
+    top: 50px;
+}
+
+.custom-menu-small-screens{
+    display: none;
+}
+
+.dropdown-custom{
+    background-color: #4f4f4f;
+    position: absolute;
+    width: 100%;
+}
+
+.hiding{
+    visibility: hidden;
+}
+
+.showing{ 
+    visibility: visible;
+}
+
+.dropdown-custom a:link {
+    text-decoration: none;
+}
+
+.dropdown-custom h2:hover{
+    color: #43A579;
+}
+
+.dropdown-custom h2{ 
+    color: white;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .custom-menu-small-screens{
+        display: block;
+    }
+    .menu-icon-small{ 
+        display: block;
+    }
+}

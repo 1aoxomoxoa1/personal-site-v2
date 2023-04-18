@@ -7,7 +7,7 @@ import { loadImagesExperience } from '../../api/Experience/experience';
 import Timeline from './Timeline';
 import { loadImagesHome } from '../../api/HomePage/homepage';
 
-function Experience(){ 
+function Experience({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){ 
 
     const location = useLocation();
     
@@ -32,7 +32,7 @@ function Experience(){
 
     return( 
        <div className='my-body'> 
-            <Navbar index={isIndex}> </Navbar>
+            <Navbar index={isIndex} smallMenuButtonRef={smallMenuButtonRef} menuRef={menuRef} isWithinPhoneMenu={isWithinPhoneMenu}> </Navbar>
             <main className='experiences main-sec'>
                 <Timeline 
                     experiences={experiences} 

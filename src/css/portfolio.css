@@ -1,18 +1,23 @@
 
 .clickable-dots{
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-content: center;
-    width: 60vw;
-    padding: 2%;
+    width: 100%;
+    padding: 2%; */
     
 }
 
+
+.marker{
+    padding: 5px;
+}
 
 .desc-wrapper{
     display: flex;
     gap: 20px;
 }
+
 
 
 
@@ -29,6 +34,29 @@
     display: flex;
     align-items: center;
     margin: 2vh 0;
+}
+
+@media screen and (max-width: 600px) {
+    .portfolioObj-main{
+        display: block;
+    }
+
+    .desc-wrapper{
+        display: block;
+    }
+
+    .img-desc-ctr{
+        width: 100%;
+    }
+
+    .desc-ctr * {
+        margin: 20px 0;
+    }
+
+    .marker .header-portfolio{
+        height: 15vh;
+    }
+
 }
 
 .tech-used-ctr{

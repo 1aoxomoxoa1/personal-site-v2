@@ -8,7 +8,7 @@ import { loadPortfolio } from '../../api/Portfolio/portfolio';
 import PortfolioObj from './PortfolioObj';
 import PortfolioTimeline from './PortfolioTimeline';
 
-function Portfolio(){ 
+function Portfolio({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){ 
 
     const location = useLocation();
 
@@ -28,7 +28,7 @@ function Portfolio(){
 
     return( 
        <div className='my-body'> 
-            <Navbar index={isIndex}> </Navbar>
+            <Navbar index={isIndex} smallMenuButtonRef={smallMenuButtonRef} menuRef={menuRef} isWithinPhoneMenu={isWithinPhoneMenu}> </Navbar>
             <main className='portfolio main-sec'>
                 <PortfolioTimeline
                     portfolio={portfolio}

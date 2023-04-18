@@ -7,7 +7,6 @@ import { handleHide } from '../../api/HomePage/navbar';
 
 
 
-
 function CustomModal({show, setShow, modalClasses, setModalClasses, onAnimationEnd, setClickable, setMenuIconClass}){
 
   const urlToIndexMap = new Map([['/', 0], ['/experience', 1], ['/portfolio', 2], ['/contact', 3]]);

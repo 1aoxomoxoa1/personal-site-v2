@@ -8,9 +8,8 @@ import { useLocation } from 'react-router-dom';
 import { checkNavigationHistory } from '../../api/utilities';
 import {loadImagesHome} from '../../api/HomePage/homepage';
 
-//https://aaronmassey.pro/
 
-function HomePage(){ 
+function HomePage({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){ 
 
     let location = useLocation();
     
@@ -23,10 +22,11 @@ function HomePage(){
         loadImagesHome(setImages);
     }, []);
 
+    
 
     return( 
        <div className='my-body'> 
-            <Navbar index={isIndex}> </Navbar>
+            <Navbar index={isIndex} smallMenuButtonRef={smallMenuButtonRef} menuRef={menuRef} isWithinPhoneMenu={isWithinPhoneMenu}> </Navbar>
             <main className='home main-sec'>
                 <div> 
                     <div className='name-pic-div'> 
@@ -38,7 +38,7 @@ function HomePage(){
                     <p> 
                         Hi, I'm Aaron. 
                         <br />
-                        In 2022, I graduated from University of California, Los Angeles, receiving my B.A. in Economics with a minor in Cognitive Science. Following graduation, I enrolled as a student in an Experis Academy bootcamp sponsored by the Israeli Government, where I have been trained to work with a full stack tech stack. I am seeking opportunities into apply and strengthen my skills as an entry-level full stack developer.
+                        In 2022, I graduated from University of California, Los Angeles, receiving my B.A. in Economics with a minor in Cognitive Science. Following graduation, I enrolled as a student in an Experis Academy bootcamp sponsored by the Israeli Government, where I have been trained to work with a full stack tech stack. I am seeking opportunities to apply and strengthen my skills as an entry-level full stack developer.
                         <br />
                     </p>
                     <div className='techs'> 

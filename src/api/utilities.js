@@ -40,10 +40,8 @@ function checkNavigationHistory(location){
     window.history.replaceState(null, '')
 
     if(!location.state){
-        console.log('not from menu');
         return true
     }else{
-        console.log('from menu');
         return false;
     }
 }

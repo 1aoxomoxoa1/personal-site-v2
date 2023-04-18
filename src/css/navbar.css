@@ -11,8 +11,13 @@ header{
     width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+    header{
+        position: relative;
+    }
+}
 
-.menu-icon{
+.menu-icon-normal{
     width: 25px;
     height: 25px;
     position: absolute;
@@ -20,6 +25,25 @@ header{
     top: 20px;
 
     z-index: 4;
+}
+
+.menu-icon-small{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 4;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-icon-normal{
+        display: none;
+    }
+    /* .menu-icon-small{ 
+        display: block;
+    } */
 }
 
 .spinning{
@@ -85,6 +109,9 @@ header{
 
     z-index: 3;
 }
+
+
+
 
 /* THIS IS STYLING FOR THE NAME LOGO INSIDE THE LEFT MODAL */
 .left-modal .name-logo{ 
@@ -224,3 +251,14 @@ header{
 }
 
 
+@media screen and (max-width: 600px) {
+    .left-modal{
+        display: none;
+    }  
+    .right-modal{
+        display: none;
+    } 
+    .right-modal .nav-links{
+        display: none;
+    }
+}

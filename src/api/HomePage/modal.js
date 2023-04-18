@@ -4,5 +4,5 @@
 export function onAnimationEnd(setClickable, setMenuIconClass){
     console.log('is firing')
     setClickable(true);
-    setMenuIconClass('menu-icon')
+    setMenuIconClass('menu-icon-normal')
 }
