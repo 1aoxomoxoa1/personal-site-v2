@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 import '../../css/custom-menu-toggle.css'
 import MenuIcon from '../../resources/menu.jpeg'
 import '../../css/navbar.css'
+import { Link } from 'react-router-dom';
 
 function CustomMenuToggle({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){
 
@@ -18,10 +19,14 @@ function CustomMenuToggle({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){
                 ref={smallMenuButtonRef}
             />
             <div className={isWithinPhoneMenu === false ? 'dropdown-custom hiding' : 'dropdown-custom showing'} ref={menuRef}>
-                <a href="/" > <h2> HOME </h2></a>
+                <Link to={"/"}> <h2> HOME </h2> </Link>
+                <Link to={"/experience"}> <h2> EXPERIENCE </h2> </Link>
+                <Link to={"/portfolio"}> <h2> PORTFOLIO </h2> </Link>
+                <Link to={"/contact"}> <h2> LINKS </h2> </Link>
+                {/* <a href="/" > <h2> HOME </h2></a>
                 <a href="/experience"> <h2> EXPERIENCE </h2></a>
                 <a href="/portfolio"> <h2> PORTFOLIO </h2></a>
-                <a href="/contact"> <h2> LINKS </h2></a>
+                <a href="/contact"> <h2> LINKS </h2></a> */}
             </div>
         </div>
     )
