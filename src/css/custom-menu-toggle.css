@@ -1,8 +1,8 @@
-custom-drop-menu{
+/* custom-drop-menu{
     position: absolute;
     right: 25px;
     top: 50px;
-}
+} */
 
 .custom-menu-small-screens{
     display: none;
@@ -12,6 +12,10 @@ custom-drop-menu{
     background-color: #4f4f4f;
     position: absolute;
     width: 100%;
+}
+
+.dropdown-custom h2{ 
+    padding: 2px;
 }
 
 .hiding{
