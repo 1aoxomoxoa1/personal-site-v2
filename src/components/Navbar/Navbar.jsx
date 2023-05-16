@@ -59,7 +59,12 @@ function Navbar({index, smallMenuButtonRef, menuRef, isWithinPhoneMenu}){
             {/* We need two menu icons for different functionality on small screens */}
             
 
-            <CustomMenuToggle smallMenuButtonRef={smallMenuButtonRef} menuRef={menuRef} isWithinPhoneMenu={isWithinPhoneMenu}> </CustomMenuToggle>
+            <CustomMenuToggle 
+                smallMenuButtonRef={smallMenuButtonRef} 
+                menuRef={menuRef} 
+                isWithinPhoneMenu={isWithinPhoneMenu}
+                index={index}> 
+            </CustomMenuToggle>
 
         </header>
      

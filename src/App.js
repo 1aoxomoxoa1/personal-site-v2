@@ -10,6 +10,8 @@ function App() {
   const [isWithinPhoneMenu, smallMenuButtonRef, setIsWithinPhoneMenu] = useWithinPhoneMenuStatus();
 
   function handleClickOffSmallMenu(event){
+    console.log('calling handleClickOffSmallMenu')
+
     //if user is within the menu while using a phone or viewport < 600px 
     if(isWithinPhoneMenu){
       //if the user clicks below the height of the custom menu I created

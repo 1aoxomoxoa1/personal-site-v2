@@ -7,7 +7,7 @@ import { loadImagesExperience } from '../../api/Experience/experience';
 import Timeline from './Timeline';
 import { loadImagesHome } from '../../api/HomePage/homepage';
 
-function Experience({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){ 
+function Experience({smallMenuButtonRef, menuRef, isWithinPhoneMenu, setIsWithinPhoneMenu}){ 
 
     const location = useLocation();
     

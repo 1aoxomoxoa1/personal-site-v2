@@ -32,9 +32,24 @@ const portfolioData = [
         gitLinks: ['https://github.com/1aoxomoxoa1/moveo-task'],
         techUsed: ['html.png', 'css.png', 'javascript.png', 'react.png', 'mysql.png', 
                     'node.png', 'github.png', 'docker.png']
+    }, 
+    {
+        idx: 3,
+        title: 'Othello Online',
+        desc: 'Othello the board game made for the desktop with React. There is Player vs. Player as well as Player vs. Ai modes.',
+        imgDescName: 'othello.jpg',
+        pageLink: 'https://othello-v2.onrender.com/',
+        gitLinks: ['https://github.com/1aoxomoxoa1/othello-v2'],
+        techUsed: ['html.png', 'css.png', 'javascript.png', 'react.png']
     }
 ];
 
+
+//**
+//  * 
+//  * @param {*} location -- location url we get when from useLocation hook when we navigate to page 
+//  * @returns T if user is not coming from the menu // F if user is coming from the menu
+//  */
 function checkNavigationHistory(location){
     window.history.replaceState(null, '')
 

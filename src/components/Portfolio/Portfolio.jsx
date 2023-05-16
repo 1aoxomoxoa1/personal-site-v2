@@ -8,7 +8,7 @@ import { loadPortfolio } from '../../api/Portfolio/portfolio';
 import PortfolioObj from './PortfolioObj';
 import PortfolioTimeline from './PortfolioTimeline';
 
-function Portfolio({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){ 
+function Portfolio({smallMenuButtonRef, menuRef, isWithinPhoneMenu, setIsWithinPhoneMenu}){ 
 
     const location = useLocation();
 

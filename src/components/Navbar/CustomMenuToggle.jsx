@@ -4,7 +4,7 @@ import MenuIcon from '../../resources/menu.jpeg'
 import '../../css/navbar.css'
 import { Link } from 'react-router-dom';
 
-function CustomMenuToggle({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){
+function CustomMenuToggle({smallMenuButtonRef, menuRef, isWithinPhoneMenu, index}){
 
     const [showing, setShowing] = useState('dropdown-custom hiding');
 
@@ -14,7 +14,6 @@ function CustomMenuToggle({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){
             <img 
                 src={MenuIcon} 
                 alt="menu-icon-custom" 
-                // onClick={() => {showing === 'dropdown-custom showing' ? setShowing('dropdown-custom hiding') : setShowing('dropdown-custom showing')}} 
                 className="menu-icon-small"
                 ref={smallMenuButtonRef}
             />

@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 import { checkNavigationHistory } from '../../api/utilities';
 import { loadContactImages } from '../../api/Contact+Links/contact';
 
-function Contact({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){ 
+function Contact({smallMenuButtonRef, menuRef, isWithinPhoneMenu, setIsWithinPhoneMenu}){ 
 
     const location = useLocation();
 

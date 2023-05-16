@@ -9,7 +9,7 @@ import { checkNavigationHistory } from '../../api/utilities';
 import {loadImagesHome} from '../../api/HomePage/homepage';
 
 
-function HomePage({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){ 
+function HomePage({smallMenuButtonRef, menuRef, isWithinPhoneMenu, setIsWithinPhoneMenu}){ 
 
     let location = useLocation();
     

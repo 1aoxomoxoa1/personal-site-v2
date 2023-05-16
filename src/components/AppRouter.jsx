@@ -14,7 +14,7 @@ function AppRouter({smallMenuButtonRef, menuRef, isWithinPhoneMenu}){
                 <Route path='/' element={<HomePage smallMenuButtonRef={smallMenuButtonRef} menuRef={menuRef} isWithinPhoneMenu={isWithinPhoneMenu}/>} /> 
                 <Route path='/experience' element={<Experience smallMenuButtonRef={smallMenuButtonRef} menuRef={menuRef} isWithinPhoneMenu={isWithinPhoneMenu}/>} /> 
                 <Route path='/portfolio' element={<Portfolio smallMenuButtonRef={smallMenuButtonRef} menuRef={menuRef} isWithinPhoneMenu={isWithinPhoneMenu}/>} /> 
-                <Route path='/contact' element={<Contact smallMenuButtonRef={smallMenuButtonRef} menuRef={menuRef} isWithinPhoneMenu={isWithinPhoneMenu}/>} /> 
+                <Route path='/contact' element={<Contact smallMenuButtonRef={smallMenuButtonRef} menuRef={menuRef} isWithinPhoneMenu={isWithinPhoneMenu} />} /> 
             </Routes>
         </BrowserRouter>
     )

@@ -9,6 +9,7 @@ function useWithinPhoneMenuStatus() {
       
       //this function is called when the menu button is pressed
       function handleMenuButtonClick(){
+        console.log(`calling handleMenuButtonClick, isWithinPhoneMenu: ${isWithinPhoneMenu}`)
         setIsWithinPhoneMenu(!isWithinPhoneMenu);
       }
 
