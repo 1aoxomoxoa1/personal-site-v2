@@ -33,8 +33,8 @@ function HomePage({smallMenuButtonRef, menuRef, isWithinPhoneMenu, setIsWithinPh
                         <h1> Aaron <span className='name-flair'> Cohen </span> </h1>
                         <img src={ProfilePic} alt="profile-pic" className='profile-pic'/>
                     </div>
-                    <h2 className='interests'> Full Stack Developer, Fitness Junky, Energy Drink Enjoyer</h2>
-                    <h2> Location : Tel Aviv, Israel</h2>
+                    <h2 className='interests'> Data Enthusiast & Full Stack Developer, Fitness Junky, Energy Drink Enjoyer</h2>
+                    <h2> Location : Ventura, California</h2>
                     <p> 
                         Hi, I'm Aaron. 
                         <br />

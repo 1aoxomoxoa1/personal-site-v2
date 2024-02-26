@@ -1,6 +1,6 @@
 export async function loadImagesExperience(setExperiences) {
     
-    const imageNames = ['royce.jpg', 'maesa.jpg', 'experis.jpg'];
+    const imageNames = ['royce.jpg', 'maesa.jpg', 'experis.jpg', 'oneai.svg'];
 
     //this will be the info that is within our timeline
     const timelineInfo = [
@@ -19,11 +19,20 @@ export async function loadImagesExperience(setExperiences) {
             title: 'Marketing Intern - Maesa NYC'
         },
         {
-            index: 1, 
+            index: 2, 
             dates: '2022 - 2023',
             info: "Brightcode is an initiative by Birthright Labs, the Israeli Innovation Authority and Experis Israel. The program seeks to train a cohort of students from all over the world to be Full Stack Developers and assist in their relocation to Israel. The training is five months, which is followed by a job placement with a two year work term in Israel.",
             responsibilities: [],
             title: 'Full Stack Bootcamp - Experis'   
+        },
+        {
+            index: 3, 
+            dates: '2023 - 2023',
+            info: `One AI engineered an API for generative AI, enabling customized chatbot creation from client PDFs and website URLs.
+                I automated the generation of hundreds of demo chatbots for our SEO effort with Python code (selenium library), boosting efficiency by 300% compared to manual creation.
+                 Resolved data persistence issues in client frontend-database interaction through SQL queries, enhancing team efficiency through reuse`,
+            responsibilities: ["Gained first-hand sales experience supporting the sales team in 20+ sales demo calls", "Built website components with HTML and Javascript on Webflow"],
+            title: 'Data Analyst - One AI'   
         }
     ]
 

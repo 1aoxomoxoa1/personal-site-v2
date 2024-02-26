@@ -1,6 +1,6 @@
 .contact-wrapper{ 
-    text-align: center;
     width: 100%;
+    font-size: 150%;
 }
 
 
@@ -18,19 +18,23 @@
 
 
 .my-row{
-    display: block;
+    display: flex;
+    gap: 30px;
     word-wrap: break-word;
+    padding: 20px;
 }
 
-.my-row p{
+.my-row span{
     font-size: 150%;
 }
 
 .my-row img{ 
-    width: 8vw;
+    width: 50px;
 }
 
-/* .text-wrapper-info *{
-    box-sizing: content-box;
-} */
+.text-wrapper-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 

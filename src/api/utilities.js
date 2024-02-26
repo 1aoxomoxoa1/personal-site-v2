@@ -15,6 +15,15 @@ const portfolioData = [
     },
     {
         idx: 1,
+        title: 'Othello Online',
+        desc: 'Othello the board game made for the desktop with React. There is Player vs. Player as well as Player vs. Ai modes.',
+        imgDescName: 'othello.jpg',
+        pageLink: 'https://othello-v2.onrender.com/',
+        gitLinks: ['https://github.com/1aoxomoxoa1/othello-v2'],
+        techUsed: ['html.png', 'css.png', 'javascript.png', 'react.png']
+    },
+    {
+        idx: 2,
         title: 'Online Store',
         desc: 'I developed a small website modeling an online shoe store. Front end built with react and back end built with Node and Express.',
         imgDescName: 'shoe-store.jpg',
@@ -24,7 +33,7 @@ const portfolioData = [
                     'mysql.png', 'node.png', 'amazon.png', 'github.png']
     },
     {
-        idx: 2,
+        idx: 3,
         title: 'Online Code Editor Classroom',
         desc: 'I developed a small website modeling an code editor. First user to enter the room is the teacher and can edit and the changes are live streamed to the other participants in the room who can see the live changes.',
         imgDescName: 'codeblock.png',
@@ -33,15 +42,7 @@ const portfolioData = [
         techUsed: ['html.png', 'css.png', 'javascript.png', 'react.png', 'mysql.png', 
                     'node.png', 'github.png', 'docker.png']
     }, 
-    {
-        idx: 3,
-        title: 'Othello Online',
-        desc: 'Othello the board game made for the desktop with React. There is Player vs. Player as well as Player vs. Ai modes.',
-        imgDescName: 'othello.jpg',
-        pageLink: 'https://othello-v2.onrender.com/',
-        gitLinks: ['https://github.com/1aoxomoxoa1/othello-v2'],
-        techUsed: ['html.png', 'css.png', 'javascript.png', 'react.png']
-    }
+
 ];
 
 

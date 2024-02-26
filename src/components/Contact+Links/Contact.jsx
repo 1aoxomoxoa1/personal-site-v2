@@ -26,15 +26,20 @@ function Contact({smallMenuButtonRef, menuRef, isWithinPhoneMenu, setIsWithinPho
             <Navbar index={isIndex} smallMenuButtonRef={smallMenuButtonRef} menuRef={menuRef} isWithinPhoneMenu={isWithinPhoneMenu}> </Navbar>
             <main className='contact main-sec'>
                 <div className='contact-wrapper'> 
-                    <h1> Let's <span className='name-flair'> Talk </span></h1>
+                    <h1> Let's <span className='name-flair'> Talk! </span></h1>
+                    <h3>  Aaron <span className='name-flair'> Cohen </span> - Data Analyst & Full Stack Developer </h3>
                     <div className='contact-info'>
-                        {contactImages.map((contactImage) => 
+                        {contactImages.map((contactImage, index) => 
                             <div className='my-row'>
                                 <div className='img-wrapper'>
-                                    <img src={contactImage.src} alt={contactImage.name} /> 
+                                    <img src={contactImage.src} alt={contactImage.name}/> 
                                 </div>
                                 <div className='text-wrapper-info'> 
-                                    <p> {contactImage.info} </p>
+                                    {index === 2 ?
+                                    <a href={contactImage.info}> <span> {contactImage.info} </span> </a>
+                                    : 
+                                    <span> {contactImage.info} </span>
+                                    }
                                 </div>
                                 {/* <h2> {contactImage.info} </h2> */}
                             </div>

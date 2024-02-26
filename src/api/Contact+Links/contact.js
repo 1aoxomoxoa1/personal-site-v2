@@ -1,8 +1,8 @@
 
 export async function loadContactImages(setContactImages){
     
-    const imageNames = ['email.jpg', 'phone.jpg', 'linkedin.jpg'];
-    const information = ['atcohen60@gmail.com', 'USA: 1-310-779-5359 // IS: 972-54-8280740', 'https://www.linkedin.com/in/aaron-t-cohen/']
+    const imageNames = ['email.jpg', 'phone.jpg', 'linkedin-bw.png'];
+    const information = ['atcohen60@gmail.com', '1-310-779-5359', 'https://www.linkedin.com/in/aaron-t-cohen/']
 
 
     const loadedImages = await Promise.all(imageNames.map(async (imageName) => {
