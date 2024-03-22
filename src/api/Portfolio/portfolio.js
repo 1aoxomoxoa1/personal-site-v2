@@ -63,5 +63,7 @@ export async function loadPortfolio(setPortfolio){
         portfolioObjIncomplete.techUsed = techUsedWithImages;
     }
 
+    console.log(portfolioWithDescriptions)
+
     setPortfolio(portfolioWithDescriptions);
 }

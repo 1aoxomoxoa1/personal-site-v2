@@ -15,6 +15,15 @@ const portfolioData = [
     },
     {
         idx: 1,
+        title: 'Eye Tracker',
+        desc: 'I forked and updated an eye-tracking application (partially working) for my hospitalized friend that could enable him to communicate via a keyboard and eye movement (python opencv, python dlib with a pretrained facial features detection model).',
+        imgDescName: 'keyboard-test.mp4',
+        pageLink: 'https://github.com/1aoxomoxoa1/abes-portal',
+        gitLinks: ['https://github.com/1aoxomoxoa1/abes-portal'],
+        techUsed: ['python.jpg']
+    },
+    {
+        idx: 2,
         title: 'Othello Online',
         desc: 'Othello the board game made for the desktop with React. There is Player vs. Player as well as Player vs. Ai modes.',
         imgDescName: 'othello.jpg',
@@ -23,7 +32,7 @@ const portfolioData = [
         techUsed: ['html.png', 'css.png', 'javascript.png', 'react.png']
     },
     {
-        idx: 2,
+        idx: 3,
         title: 'Online Store',
         desc: 'I developed a small website modeling an online shoe store. Front end built with react and back end built with Node and Express.',
         imgDescName: 'shoe-store.jpg',
@@ -33,7 +42,7 @@ const portfolioData = [
                     'mysql.png', 'node.png', 'amazon.png', 'github.png']
     },
     {
-        idx: 3,
+        idx: 4,
         title: 'Online Code Editor Classroom',
         desc: 'I developed a small website modeling an code editor. First user to enter the room is the teacher and can edit and the changes are live streamed to the other participants in the room who can see the live changes.',
         imgDescName: 'codeblock.png',

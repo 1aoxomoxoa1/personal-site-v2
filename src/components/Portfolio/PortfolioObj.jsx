@@ -11,9 +11,20 @@ function PortfolioObj({portfolioObj, hidden}){
             <div className='portfolioObj-main'> 
                 
                 <div className='desc-wrapper'>
-                    <div className='img-desc-ctr'> 
-                        <img src={portfolioObj.srcDesc} alt={portfolioObj.imgDescName} className='description-pic'/>
-                    </div>
+                    {portfolioObj.idx === 1 
+                        ?
+                        <div className='img-desc-ctr'> 
+                           <video controls width={"640"} height={"480"}>
+                                <source src={portfolioObj.srcDesc} type="video/mp4"/>
+                           </video>
+                        </div>
+                        :
+                        <div className='img-desc-ctr'> 
+                            <img src={portfolioObj.srcDesc} alt={portfolioObj.imgDescName} className='description-pic'/>
+                        </div>
+
+                    }
+     
                     <div className='desc-ctr'>
                         <p> {portfolioObj.desc} </p>
                         <a href={portfolioObj.pageLink}> <h5> Project Link </h5></a>

@@ -31,7 +31,7 @@ export async function loadImagesExperience(setExperiences) {
             info: `One AI engineered an API for generative AI, enabling customized chatbot creation from client PDFs and website URLs.
                 I automated the generation of hundreds of demo chatbots for our SEO effort with Python code (selenium library), boosting efficiency by 300% compared to manual creation.
                  Resolved data persistence issues in client frontend-database interaction through SQL queries, enhancing team efficiency through reuse`,
-            responsibilities: ["Gained first-hand sales experience supporting the sales team in 20+ sales demo calls", "Built website components with HTML and Javascript on Webflow"],
+            responsibilities: ["Gained first-hand sales experience supporting the sales team in 20+ sales demo calls", "Built website components with HTML and Javascript on Webflow", "Automated the generation of hundreds of demo chatbots for our SEO effort with Python code (selenium library), boosting efficiency by 300% compared to manual creation."],
             title: 'Data Analyst - One AI'   
         }
     ]
